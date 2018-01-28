@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Brakes</string>
-    <string name="placeholder">Nothing to see here...</string>
+    <string name="url_navigation_option">URL Navigation Allowed</string>
+    <string name="url_blocked">URL navigation blocked</string>
 </resources>
