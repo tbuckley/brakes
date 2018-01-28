@@ -9,10 +9,18 @@
     <TextView
         android:id="@+id/textview"
         android:padding="16dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/placeholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/url_navigation_toggle"
+        android:text="@string/url_navigation_option"
         android:visibility="visible" />
+
+    <ToggleButton
+        android:id="@+id/url_navigation_toggle"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
     <WebView xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/webview"
@@ -20,5 +28,14 @@
         android:layout_height="fill_parent"
         android:visibility="gone"
         />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginTop="24dp"
+        android:indeterminate="true"
+        android:visibility="gone" />
 
 </android.support.constraint.ConstraintLayout>
