@@ -1,4 +1,4 @@
-package com.example.tbuckley.brakes;
+package com.tbuckley.android.brakes;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
