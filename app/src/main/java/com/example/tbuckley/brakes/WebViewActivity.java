@@ -76,8 +76,11 @@ public class WebViewActivity extends AppCompatActivity implements View.OnTouchLi
                 return super.shouldOverrideUrlLoading(view, request);
             }
         });
+
+        // Enable Javascript & Zoom
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
+        webSettings.setBuiltInZoomControls(true);
         webSettings.setSupportZoom(true);
 
         Intent intent = getIntent();
